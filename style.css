@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: "gilroy";
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: #e7e1e1f6;
+  display: grid;
+  grid-template-columns: 25% 25% 50%;
+  grid-template-rows: 30% 50% 20%;
+}
+/* .left-top-left{
+
+} */
+.box {
+  margin: 20px;
+  height: 18px;
+  width: 18px;
+  border: 1px solid black;
+  background-color: black;
+  rotate: 45deg;
+}
+
+.left-top-right {
+  justify-self: right;
+  color: #333;
+  text-align: right;
+  text-transform: capitalize;
+  padding: 30px;
+}
+
+.left-top-right h4 {
+  padding-bottom: 50px;
+}
+
+.left-center {
+  grid-column: 1/3;
+  padding-left: 25px;
+}
+.left-center h1 {
+  font-size: 6vw;
+  line-height: 5.5vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.left-center h1:nth-child(2n) {
+  text-align: center;
+}
+.left-bottom {
+  padding: 25px;
+  grid-column: 1/3;
+  width: 70%;
+  color: #666;
+}
+
+.right {
+  grid-column: 3;
+  grid-row: 1/4;
+  padding: 30px;
+  padding-right: 150px;
+}
+.right video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+#arrow {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: orangered;
+  color: white;
+  padding: 20px;
+  border-radius: 50%;
+}
+#arrow i {
+  font-size: 25px;
+  font-weight: 100;
+}
